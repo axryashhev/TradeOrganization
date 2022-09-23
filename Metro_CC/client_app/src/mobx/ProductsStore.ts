@@ -1,8 +1,8 @@
 import { action, makeObservable, observable } from "mobx";
 import React from "react";
-import { Category, Product } from "../Interfaces/Interfaces";
 import MobxController from "./MobxController";
 import { Action } from "../Constains/Constains";
+import {Product} from "../Models/Product";
 
 // const dataAxiosProduct$ = new MobxController().loadDataRX(
 //   Action.GET_DATA.PRODUCT

@@ -1,8 +1,8 @@
 import { action, makeObservable, observable } from "mobx";
 import React from "react";
-import { Tag } from "../Interfaces/Interfaces";
 import MobxController from "./MobxController";
 import { Action } from "../Constains/Constains";
+import {Tag} from "../Models/Tag";
 
 class TagsStore {
   @observable

@@ -1,7 +1,6 @@
 import React, { useCallback, useMemo, useState } from "react";
 import { Button, Form } from "react-bootstrap";
-import { Category } from "../../../Interfaces/Interfaces";
-
+import {Category} from "../../../Models/Category";
 interface AddCategoryComponentProps {
   addForm: boolean;
   lenghtCategories: number;
@@ -60,7 +59,7 @@ export const AddCategoryComponent = ({
           <h2>Add new Category</h2>
           <hr />
           <Form onSubmit={handleCatFormSubmit}>
-            <Form.Group my={3}>
+            <Form.Group>
               <Form.Control
                 type="tex"
                 value={categoryName}
@@ -69,7 +68,7 @@ export const AddCategoryComponent = ({
               />
             </Form.Group>
             <br />
-            <Form.Group my={3}>
+            <Form.Group>
               <Button type="submit" className="btn btn-sm btn-success">
                 Add
               </Button>

@@ -1,7 +1,7 @@
 import { Form } from "react-bootstrap";
 import React, { useCallback, useEffect, useState } from "react";
 import { toJS } from "mobx";
-import { Tag } from "../../../../Interfaces/Interfaces";
+import {Tag} from "../../../../Models/Tag";
 
 interface SelectTagProps {
   tags: Array<Tag>;

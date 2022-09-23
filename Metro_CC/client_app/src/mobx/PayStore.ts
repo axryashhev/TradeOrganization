@@ -1,6 +1,6 @@
 import { action, makeObservable, observable } from "mobx";
 import React from "react";
-import { Product } from "../Interfaces/Interfaces";
+import {Product} from "../Models/Product";
 
 class PayStore {
   @observable

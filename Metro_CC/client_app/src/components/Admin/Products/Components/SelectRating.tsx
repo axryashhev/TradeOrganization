@@ -7,7 +7,7 @@ interface SelectTagProps {
 
 const Rating = [0, 1, 2, 3, 4, 5];
 
-export function SelectRating({ onChange }: SelectTagProps) {
+export const SelectRating = ({ onChange }: SelectTagProps) => {
   const [selectRating, setSelectRating] = useState<number>(-1);
 
   const onChangeValue = useCallback(
@@ -34,4 +34,4 @@ export function SelectRating({ onChange }: SelectTagProps) {
       </select>
     </Form.Group>
   );
-}
+};

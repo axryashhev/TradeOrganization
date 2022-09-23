@@ -1,9 +1,8 @@
 import { action, makeObservable, observable } from "mobx";
-import { Subscription } from "rxjs";
 import React from "react";
-import { Category } from "../Interfaces/Interfaces";
 import MobxController from "./MobxController";
 import { Action } from "../Constains/Constains";
+import {Category} from "../Models/Category";
 
 class CategoryStore {
   @observable
